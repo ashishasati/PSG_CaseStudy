@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>PGS.WebApi</name>
+    </assembly>
+    <members>
+        <member name="T:PGS.WebApi.Controllers.WeatherController">
+            <summary>
+            weather Api
+            </summary>
+        </member>
+        <member name="M:PGS.WebApi.Controllers.WeatherController.#ctor(PGS.ServicesContract.IWeatherService)">
+            <summary>
+            Inject
+            </summary>
+            <param name="weatherService"></param>
+        </member>
+        <member name="M:PGS.WebApi.Controllers.WeatherController.Get">
+            <summary>
+            All city weather Data
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="T:PGS.WebApi.MiddleWare.AuthorizationTokenFilter">
+            <summary>
+            Filter
+            </summary>
+        </member>
+        <member name="M:PGS.WebApi.MiddleWare.AuthorizationTokenFilter.OnAuthorization(Microsoft.AspNetCore.Mvc.Filters.AuthorizationFilterContext)">
+            <summary>
+            Authorization
+            </summary>
+            <param name="context"></param>
+        </member>
+        <member name="T:PGS.WebApi.MiddleWare.HeaderParameter">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="T:PGS.WebApi.Startup">
+            <summary>
+            
+            </summary>
+        </member>
+        <member name="M:PGS.WebApi.Startup.#ctor(Microsoft.Extensions.Configuration.IConfiguration)">
+            <summary>
+            startup constructor IConfiguration
+            </summary>
+            <param name="configuration"></param>
+        </member>
+        <member name="M:PGS.WebApi.Startup.ConfigureServices(Microsoft.Extensions.DependencyInjection.IServiceCollection)">
+            <summary>
+            Configuraion compile time
+            </summary>
+            <param name="services"></param>
+        </member>
+        <member name="M:PGS.WebApi.Startup.Configure(Microsoft.AspNetCore.Builder.IApplicationBuilder,Microsoft.AspNetCore.Hosting.IHostingEnvironment)">
+            <summary>
+            configuraion run time   
+            </summary>
+            <param name="app"></param>  
+            <param name="env"></param>
+        </member>
+    </members>
+</doc>
